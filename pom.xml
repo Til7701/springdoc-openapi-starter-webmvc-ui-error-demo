@@ -93,18 +93,10 @@
                             <generateModelTests>false</generateModelTests>
                             <generateApiTests>false</generateApiTests>
                             <addTestCompileSourceRoot>false</addTestCompileSourceRoot>
-                            <supportingFilesToGenerate>
-                                SpringDocConfiguration.java,ApiUtil.java,EnumConverterConfiguration.java
-                            </supportingFilesToGenerate>
-                            <modelNameSuffix>Dto</modelNameSuffix>
                             <configOptions>
                                 <configPackage>com.example.springdocopenapistarterwebmvcuidemo.config</configPackage>
-                                <enumUnknownDefaultCase>true</enumUnknownDefaultCase>
                                 <useSpringBoot3>true</useSpringBoot3>
-                                <delegatePattern>true</delegatePattern>
-                                <booleanGetterPrefix>is</booleanGetterPrefix>
                                 <useOptional>true</useOptional>
-                                <useSealed>true</useSealed>
                             </configOptions>
                         </configuration>
                     </execution>

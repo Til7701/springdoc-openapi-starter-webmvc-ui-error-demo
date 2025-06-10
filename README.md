@@ -3,7 +3,7 @@
 This is a quick demonstration of an error occurring when opening the swagger ui with
 swagger-core to 2.2.30.
 
-This error is caused by defining a default value for an enum.
+This error is caused by defining a default value for anything.
 
 ## Discovery
 

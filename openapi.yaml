@@ -13,13 +13,18 @@ paths:
           name: mode
           required: false
           schema:
-            default: CREATE
-            enum:
-              - CREATE
-              - EXTEND
-              - REPLACE
-              - RESTRUCTURE
-            type: string
+            $ref: '#/components/schemas/dataInsertionMode'
       responses:
         "200":
           description: OK
+
+components:
+  schemas:
+    dataInsertionMode:
+      type: string
+      enum:
+        - CREATE
+        - EXTEND
+        - REPLACE
+        - RESTRUCTURE
+      default: CREATE

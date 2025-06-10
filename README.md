@@ -3,7 +3,7 @@
 This is a quick demonstration of an error occurring when opening the swagger ui with Bumps
 org.springdoc:springdoc-openapi-starter-webmvc-ui 2.8.8.
 
-This error is caused by defining a default value for an enum which is defined in the request and not in the components.
+This error is caused by defining a default value for an enum.
 
 ## Building the project
 

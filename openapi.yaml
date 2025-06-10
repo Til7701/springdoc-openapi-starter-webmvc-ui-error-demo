@@ -1,0 +1,49 @@
+openapi: 3.0.3
+info:
+  description: TH1
+  title: TH1
+  version: 0.0.1
+
+paths:
+  /converter/{tableStructureId}:
+    post:
+      operationId: convertTable
+      parameters:
+        - in: path
+          name: tableStructureId
+          required: true
+          schema:
+            format: int64
+            minimum: 1
+            type: integer
+        - in: query
+          name: mode
+          required: false
+          schema:
+            default: CREATE
+            enum:
+              - CREATE
+              - EXTEND
+              - REPLACE
+              - RESTRUCTURE
+            type: string
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [ file ]
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        "200":
+          description: OK
+        "400":
+          description: Bad request
+        "401":
+          description: Unauthorized
+        "404":
+          description: Not found
+      summary: Convert a table and save it to the database

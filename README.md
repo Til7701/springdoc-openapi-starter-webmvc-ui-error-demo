@@ -1,9 +1,14 @@
-# SpringDoc OpenAPI 2.8.8 Error Demo
+# swagger-core 2.2.30 Error Demo
 
-This is a quick demonstration of an error occurring when opening the swagger ui with Bumps
-org.springdoc:springdoc-openapi-starter-webmvc-ui 2.8.8.
+This is a quick demonstration of an error occurring when opening the swagger ui with
+swagger-core to 2.2.30.
 
 This error is caused by defining a default value for an enum.
+
+## Discovery
+
+This error was first discovered in the update of org.springdoc:springdoc-openapi-starter-webmvc-ui to 2.8.8.
+However, it is likely caused by its update of swagger-core to 2.2.30.
 
 ## Building the project
 

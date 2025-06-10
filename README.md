@@ -10,6 +10,8 @@ This error is caused by defining a default value for an enum.
 This error was first discovered in the update of org.springdoc:springdoc-openapi-starter-webmvc-ui to 2.8.8.
 However, it is likely caused by its update of swagger-core to 2.2.30.
 
+The error was reported here: https://github.com/swagger-api/swagger-core/issues/4903
+
 ## Building the project
 
 This project is written in Java 21 and uses Maven as its build tool.

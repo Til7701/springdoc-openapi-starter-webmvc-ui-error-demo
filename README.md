@@ -5,6 +5,8 @@ springdoc-openapi to 2.8.7.
 
 This error is caused by defining a default value for anything.
 
+The issue can be fixed by registering the `Jdk8Module` with the `ObjectMapper` like this `Json31.mapper().registerModule(new Jdk8Module());`.
+
 ## Discovery
 
 The error was reported here: https://github.com/swagger-api/swagger-core/issues/4903

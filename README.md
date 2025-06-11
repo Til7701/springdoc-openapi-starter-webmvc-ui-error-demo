@@ -1,14 +1,11 @@
-# swagger-core 2.2.30 Error Demo
+# springdoc-openapi 2.8.7 Error Demo
 
 This is a quick demonstration of an error occurring when opening the swagger ui with
-swagger-core to 2.2.30.
+springdoc-openapi to 2.8.7.
 
 This error is caused by defining a default value for anything.
 
 ## Discovery
-
-This error was first discovered in the update of org.springdoc:springdoc-openapi-starter-webmvc-ui to 2.8.8.
-However, it is likely caused by its update of swagger-core to 2.2.30.
 
 The error was reported here: https://github.com/swagger-api/swagger-core/issues/4903
 
